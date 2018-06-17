@@ -1,0 +1,297 @@
+[ 2018-06-15T15:28:19+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-06-15T15:39:32+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-06-15T15:39:53+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-15T15:47:43+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-06-15T15:47:45+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2018-06-15T15:49:11+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-06-15T15:58:12+08:00 ] ::1 /demo/api
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-15T15:58:25+08:00 ] ::1 /demo/api/user/login?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005500s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 9 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.033004s ]
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 11 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; WXBizDataCrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\wxBizDataCrypt.php 第 14 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; Prpcrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\pkcs7Encoder.php 第 59 行.
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 15 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 16 行.
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 16 行.
+NOTIC: [2] fopen(/dev/urandom): failed to open stream: No such file or directory C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 89 行.
+NOTIC: [1024] Can not open /dev/urandom. C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 97 行.
+NOTIC: [2] unlink(C:\phpStudy\WWW\demo/cache/Temp/d41d8cd98f00b204e9800998ecf8427e.php): No such file or directory C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+
+[ 2018-06-15T15:58:29+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-15T15:58:29+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-06-15T16:01:53+08:00 ] ::1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-06-15T16:01:58+08:00 ] ::1 /demo/api
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-06-15T16:07:22+08:00 ] ::1 /demo/api/user/login?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003501s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.005500s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 16 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 18 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; WXBizDataCrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\wxBizDataCrypt.php 第 14 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; Prpcrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\pkcs7Encoder.php 第 59 行.
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 22 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 23 行.
+NOTIC: [2] fopen(/dev/urandom): failed to open stream: No such file or directory C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 96 行.
+NOTIC: [1024] Can not open /dev/urandom. C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 104 行.
+NOTIC: [2] unlink(C:\phpStudy\WWW\demo/cache/Temp/d41d8cd98f00b204e9800998ecf8427e.php): No such file or directory C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+
+[ 2018-06-15T16:07:26+08:00 ] ::1 /demo/api/user/login?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 16 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 18 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; WXBizDataCrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\wxBizDataCrypt.php 第 14 行.
+NOTIC: [8192] Methods with the same name as their class will not be constructors in a future version of PHP; Prpcrypt has a deprecated constructor C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Vendor\wxBizDataCrypt\pkcs7Encoder.php 第 59 行.
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 22 行.
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "" or openid ="" ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: openid C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_key C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 23 行.
+NOTIC: [2] fopen(/dev/urandom): failed to open stream: No such file or directory C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 96 行.
+NOTIC: [1024] Can not open /dev/urandom. C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 104 行.
+NOTIC: [2] unlink(C:\phpStudy\WWW\demo/cache/Temp/d41d8cd98f00b204e9800998ecf8427e.php): No such file or directory C:\phpStudy\WWW\demo\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+
+[ 2018-06-15T16:07:33+08:00 ] ::1 /demo/api/user/getInfo?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.005501s ]
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "10007" or openid ="10007" ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-15T16:07:51+08:00 ] ::1 /demo/api/user/getInfo?code=10008
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.013502s ]
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "10008" or openid ="10008" ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-15T16:07:55+08:00 ] ::1 /demo/api/user/getInfo?code=10006
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.008501s ]
+SQL: SELECT `id`,`avatarUrl`,`city`,`gender`,`nickName`,`province`,`county`,`phone`,`vehicle`,`name` FROM `xcx_user` WHERE ( id = "10006" or openid ="10006" ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-15T16:11:26+08:00 ] ::1 /demo/api/user/getInfo?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009501s ]
+SQL: SELECT `userCd`,`userName` FROM `xcx_user` WHERE ( userCd = "10007 ) LIMIT 1   [ RunTime:0.000500s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"10007 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `userCd`,`userName` FROM `xcx_user` WHERE ( userCd = "10007 ) LIMIT 1  
+
+[ 2018-06-15T16:12:08+08:00 ] ::1 /demo/api/user/getInfo?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009001s ]
+SQL: SELECT `userCd`,`userName`,`password` FROM `xcx_user` WHERE ( userCd = "10007 ) LIMIT 1   [ RunTime:0.000500s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"10007 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `userCd`,`userName`,`password` FROM `xcx_user` WHERE ( userCd = "10007 ) LIMIT 1  
+
+[ 2018-06-15T16:12:25+08:00 ] ::1 /demo/api/user/getInfo?code=10007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009501s ]
+SQL: SELECT `userCd`,`userName`,`password` FROM `xcx_user` WHERE ( userCd = "10007" ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2018-06-15T16:19:51+08:00 ] ::1 /demo/api/user/register?userCd=10007&userName=%E6%9D%8E%E5%9B%9B&password=gggg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.010002s ]
+ERR: Cannot use object of type Api\Model\UserModel as array
+
+[ 2018-06-15T16:23:03+08:00 ] ::1 /demo/api/user/register?userCd=10008&userName=%E6%9D%8E%E5%9B%9B&password=gggg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.005501s ]
+ERR: Cannot use object of type Api\Model\UserModel as array
+
+[ 2018-06-15T16:27:47+08:00 ] ::1 /demo/api/user/register?userCd=10008&userName=%E6%9D%8E%E5%9B%9B&password=gggg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009502s ]
+
+[ 2018-06-15T16:28:54+08:00 ] ::1 /demo/api/user/register?userCd=10008&userName=%E6%9D%8E%E5%9B%9B&password=gggg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009001s ]
+
+[ 2018-06-15T16:40:36+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.005001s ]
+NOTIC: [8] Undefined variable: i C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 22 行.
+ERR: Call to a member function getError() on null
+
+[ 2018-06-15T16:45:59+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.039505s ]
+NOTIC: [8] Undefined variable: i C:\phpStudy\WWW\demo\Apps\Api\Controller\UserController.class.php 第 22 行.
+ERR: Call to a member function getError() on null
+
+[ 2018-06-15T16:46:55+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.008501s ]
+
+[ 2018-06-15T16:47:43+08:00 ] ::1 /demo/api/user/register?userCd=10008&userName=%E6%9D%8E%E5%9B%9B&password=gggg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.010501s ]
+
+[ 2018-06-15T16:47:57+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.015502s ]
+
+[ 2018-06-15T16:48:50+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.004001s ]
+
+[ 2018-06-15T16:49:25+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009001s ]
+
+[ 2018-06-15T16:52:14+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Declaration of Api\Model\UserModel::add($data) should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) C:\phpStudy\WWW\demo\Apps\Api\Model\UserModel.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009001s ]
+
+[ 2018-06-15T16:54:06+08:00 ] ::1 /demo/api/user/register
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `xcx_user` [ RunTime:0.009001s ]
+SQL: INSERT INTO `xcx_user` (`userCd`,`userName`,`password`) VALUES ('10008','李四','gggg') [ RunTime:0.014002s ]
+
+[ 2018-06-15T17:50:16+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003574s ]
+
+[ 2018-06-15T17:50:22+08:00 ] 127.0.0.1 /demo/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001851s ]
+
