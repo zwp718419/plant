@@ -1,128 +1,95 @@
 <?php
 namespace Api\Controller;
 use Think\Controller;
+use Think\Log;
+
 class UserController extends Controller {
-    public function getInfo(){   
-        //$sk = $this->getOpenid(I('code'));
+    
+    /**
+     * 注册用户
+     * 
+     */
+    public function register() {
+        // $data = $_POST;
+        $data = var_dump($_REQUEST);
+        echo "99999".$data;
+        $u = D('SysUser');
 
-        $u = D('User');
-        if($user = $u->getInfo(I('code'))){
-            $result['status'] = 0;
-        }
-        exit(json_encode($user));
-    }
-
-    public function register(){
-        $data = $_POST;
-        $u = D('User');
-        if($user = $u->register($data)){
-            $result['status'] = 1;
+        if ($user = $u->updateInfo($data)) {
+            $result['code'] = "1000";
+            $result['msg'] = "注册成功！";
         } else {
-            $result['status'] = 0;
+            $result['code'] = 0;
             $result['msg'] = $u->getError();
         }
         exit(json_encode($result));
     }
 
-    public function login(){   
-        $sk = $this->getOpenid(I('code'));
+    /**
+     * 用户登录
+     * 
+     */
+    public function login() {
+        // var_dump($_REQUEST);
+        // var_dump($_POST);
+        // $data = file_get_contents("php://input");
 
-        $u = D('User');
-        $user = $u->getUserInfo($sk['openid']);
-        if(empty($user)){ //如果第一次登陆
-            $UserInfo = json_decode($this->getUserInfo($sk['session_key'],I('encryptedData'),I('iv')),true);
-            unset($UserInfo['watermark']);
-            $u->add($UserInfo);
-        }
-        $user = $u->getUserInfo($sk['openid']);
-        $sk = $this->get3rdSession($sk['openid'],$sk['session_key']);
-        $result['user'] = $user;
-        $result['sk'] = $sk;
-        exit(json_encode($result));
-    }
+        $bodyStr = file_get_contents("php://input");
+        Log::write($bodyStr, "INFO");
+        $data = json_decode($bodyStr, true);
 
-    public function editUser() //修改个人信息
-    {
-        $u = D('User');
-        $json = file_get_contents('php://input');
-        $data = json_decode($json,true);
-		$UserData = $data['userInfo'];
-		$where['openId'] = vaild_sk($data['sk']);
-		unset($UserData['sk']);
-		unset($UserData['id']);
-		$u->where($where)->save($UserData);
-		$user = $u->getUserInfo($where['openId']);
-		$result['status'] = 1;
-		$result['msg'] = '修改成功';
-		$result['user'] = $user;
-		exit(json_encode($result));
-    }
-
-    private function getUserInfo($sessionKey,$encryptedData, $iv)
-    {        
-        vendor('wxBizDataCrypt.wxBizDataCrypt');
-        $pc = new \WXBizDataCrypt(C('APPID'), $sessionKey);
-        $errCode = $pc->decryptData($encryptedData, $iv, $data );
-        if ($errCode == 0) {
-            return $data;
+        $u = D('SysUser');
+        $user = $u->getInfo($data['userCd']);
+        
+        if (empty($user)) {
+            $result['code'] = "2000";
+            $result['msg'] = "该用户不存在！";
         } else {
-            return false;
+            if ($user['password'] == $data['password']) {
+                // 获取当前公司信息
+                $cu = D('SysCompanyUserMap');
+                $companyInfo = $cu->getLoginCompanyInfo($user['userCd']);
+                // 保存到缓存
+                $sk = $this->get3rdSession($user, $companyInfo);
+
+                $tempData['user'] = $user;
+                $tempData['loginCompanyInfo'] = $companyInfo;
+                $tempData['sk'] = $sk;
+
+                $result['code'] = "1000";
+                $result['msg'] = "登录成功！";
+                $result['data'] = $tempData;
+            } else {
+                $result['code'] = "2001";
+                $result['msg'] = "密码输入错误！";
+            }
         }
-    }
-
-
-    //获取session_key
-    private function getOpenid($code)
-    {
-    	$url = "https://api.weixin.qq.com/sns/jscode2session?appid=".C('APPID')."&secret=".C('AppSecret')."&js_code=".$code."&grant_type=authorization_code";
-    	$data = file_get_contents($url);
-    	$data = json_decode($data,true);
-    	return $data;
-    }
-
-
-    //生成返回给客户端的3rdsession 
-    private function get3rdSession($openid,$session_key)
-    {
-        $session3rd = $this->randomFromDev(168);
-        S($session3rd, $openid,2592000);
-        return $session3rd;
-    }
-
-
-    public function vaild_sk()
-    {
-        if(vaild_sk(I('sk'))){
-            $result['status'] = 1;
-        }else{
-            $result['status'] = 0;
-        }
+        Log::write(json_encode($result), "INFO");
         exit(json_encode($result));
     }
-
-
 
     /**
-     * 读取/dev/urandom获取随机数
-     * @param $len
-     * @return mixed|string
+     * 用户登出
+     * 
      */
-    private function randomFromDev($len) {
-        $fp = @fopen('/dev/urandom','rb');
-        $result = '';
-        if ($fp !== FALSE) {
-            $result .= @fread($fp, $len);
-            @fclose($fp);
-        }
-        else
-        {
-            trigger_error('Can not open /dev/urandom.');
-        }
-        // convert from binary to string
-        $result = base64_encode($result);
-        // remove none url chars
-        $result = strtr($result, '+/', '-_');
+    public function logout() {
+        // 清空缓存
+        S(I('userCd'), null);
 
-        return substr($result, 0, $len);
+        $result['code'] = "1000";
+        $result['msg'] = "登出成功！";
+
+        exit(json_encode($result));
     }
+
+    //生成返回给客户端的3rdsession 
+    private function get3rdSession($user, $companyInfo) {
+        $sk = getToken();
+        
+        $session['userInfo'] = $user;
+        $session['companyInfo'] = $companyInfo;
+        S($sk, $session, 60*60*24);
+        return $sk;
+    }
+
 }

@@ -29,6 +29,7 @@ export default class EditFieldScreen extends Component {
 
   constructor(props) {
     super(props);
+    
     this.state = {
       form: {
         fieldId: "AAAAA",
@@ -43,7 +44,7 @@ export default class EditFieldScreen extends Component {
   }
 
   static navigationOptions = {
-    title: '标题1'
+    title: '土地信息编辑'
   }
 
   handleInputChange(name, value) {
