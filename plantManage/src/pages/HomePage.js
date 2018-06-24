@@ -40,16 +40,16 @@ export default class HomePage extends Component {
   login() {
     let _this = this;
     // 删除用户缓存信息
-    DeviceStorage.delete("SK_USER");
+    DeviceStorage.delete(global.storageKey.content);
     ajax({
-        url: 'user/login',
+        url: global.url.login,
         data: {userCd: '10007', password: 'gggg'},
         headers: {'Content-Type': 'application/json'},
         method: 'POST',
         success: (res)=> {
             if (res.code === '1000') {
                 // 保存用户缓存信息
-                DeviceStorage.save("SK_USER", res.data);
+                DeviceStorage.save(global.storageKey.content, res.data);
                 _this.setState({
                     title: res.data.user.userName
                 });

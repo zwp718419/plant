@@ -46,7 +46,7 @@ class SysCompanyUserMapModel extends Model {
 	function getInfoByUser($userCd)
 	{
 		$map['userCd'] = $userCd;
-		$m = $this->where($map)->find();
+		$m = $this->where($map)->select();
 		return $m;
 	}
 	

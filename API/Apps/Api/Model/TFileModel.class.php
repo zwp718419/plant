@@ -41,5 +41,16 @@ class TFileModel extends Model {
 		$m = $this->where($map)->find();
 		return $m;
 	}
+
+	/**
+	* 根据主键查询
+	*/
+	function getListByFileGroupId($companyCd,$fileGroupId)
+	{
+		$map['companyCd'] = $companyCd;
+		$map['fileGroupId'] = $fileGroupId;
+		$m = $this->where($map)->select();
+		return $m;
+	}
 }
 ?>

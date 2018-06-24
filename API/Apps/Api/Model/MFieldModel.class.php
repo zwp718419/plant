@@ -24,6 +24,12 @@ class MFieldModel extends Model {
 			array('belongToType','require','请输入所属类型'),
 			array('belongToUser','require','请输入所属者'),
 		);
+		if (!isset($data['fieldId']) || (isset($data['fieldId']) && empty($data['fieldId']))) {
+			// 采番
+			$seqMd = D("SysSequence");
+			$fieldId = $seqMd->getSequence("FD", 5);
+			$data['fieldId'] = $fieldId;
+		}
 		$m = $this->getInfo($data['companyCd'], $data['fieldId']);
 		if (empty($m)) {
 			return $this->validate($rules)->add($data);

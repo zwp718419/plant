@@ -8,16 +8,16 @@ class DeviceStorage {
      * @param key
      * @returns {Promise<T>|*|Promise.<TResult>}
      */
-
-    static async get(key) {
-        console.log(await AsyncStorage.getItem(key));
-        return await AsyncStorage.getItem(key).then((value) => {
+    static get(key) {
+        return AsyncStorage.getItem(key, (error, result)=>{
+            console.log("error  " + error);
+            console.log("RESULT  " + result);
+        }).then((value) => {
+            console.log(value);
             const jsonValue = JSON.parse(value);
-            console.log(jsonValue);
             return jsonValue;
         });
     }
-
 
     /**
      * 保存
@@ -25,9 +25,9 @@ class DeviceStorage {
      * @param value
      * @returns {*}
      */
-    static async save(key, value) {
+    static save(key, value) {
         console.log("DATA:" + JSON.stringify(value));
-        return await AsyncStorage.setItem(key, JSON.stringify(value), (error) => {
+        return AsyncStorage.setItem(key, JSON.stringify(value), (error) => {
             if (!error) {
                 console.log('保存数据成功');
             } else {
@@ -43,7 +43,7 @@ class DeviceStorage {
      * @param value
      * @returns {Promise<T>|Promise.<TResult>}
      */
-    static async update(key, value) {
+    static update(key, value) {
         return DeviceStorage.get(key).then((item) => {
             value = typeof value === 'string' ? value : Object.assign({}, item, value);
             return AsyncStorage.setItem(key, JSON.stringify(value));
@@ -56,8 +56,8 @@ class DeviceStorage {
      * @param key
      * @returns {*}
      */
-    static async delete(key) {
-        return await AsyncStorage.removeItem(key);
+    static delete(key) {
+        return AsyncStorage.removeItem(key);
     }
 }
 

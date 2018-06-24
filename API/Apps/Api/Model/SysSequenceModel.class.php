@@ -13,7 +13,7 @@ class SysSequenceModel extends Model {
 	function getSequence($prefix, $len)
 	{
 		$sequence = 1;
-		$data['seqPrefix'] = $prefix;
+		$data['prefix'] = $prefix;
 		
 		$m = $this->getInfo($prefix);
 		if (empty($m)) {
@@ -31,9 +31,9 @@ class SysSequenceModel extends Model {
 	/**
 	* 根据主键查询
 	*/
-	function getInfo($seqPrefix)
+	function getInfo($prefix)
 	{
-		$map['seqPrefix'] = $seqPrefix;
+		$map['prefix'] = $prefix;
 		$m = $this->where($map)->find();
 		return $m;
 	}

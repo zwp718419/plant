@@ -46,5 +46,16 @@ class MFieldRentModel extends Model {
 		$m = $this->where($map)->find();
 		return $m;
 	}
+
+	/**
+	* 获取明细信息
+	*/
+	function getListByFieldId($companyCd,$fieldId)
+	{
+		$map['companyCd'] = $companyCd;
+		$map['fieldId'] = $fieldId;
+		$m = $this->where($map)->select();
+		return $m;
+	}
 }
 ?>

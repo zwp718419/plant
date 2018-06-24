@@ -19,6 +19,7 @@ import {
   createSwitchNavigator
 } from 'react-navigation';
 
+
 import LoginPage from './src/pages/LoginPage';
 import HomePage from './src/pages/HomePage';
 import WorkPage from './src/pages/WorkPage';
@@ -27,6 +28,7 @@ import MyPage from './src/pages/MyPage';
 import NewPlantPage from './src/pages/work/NewPlantScreen';
 
 import EditFieldPage from './src/pages/work/EditFieldScreen';
+import EditFieldRentPage from './src/pages/work/EditFieldRentScreen';
 
 const IconHome = require('./src/res/images/home.png')
 const IconHomeSelected = require('./src/res/images/home_selected.png')
@@ -94,6 +96,10 @@ const WorkStack = createStackNavigator(
         // 田地管理
         EditField : {
             screen: EditFieldPage
+        },
+        // 田地管理
+        EditFieldRent : {
+            screen: EditFieldRentPage
         }
     }, {
         navigationOptions: ({ navigation }) => (StackNavigationCustom(navigation))

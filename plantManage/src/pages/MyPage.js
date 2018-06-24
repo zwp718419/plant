@@ -37,10 +37,9 @@ export default class MyPage extends Component {
   }
 
   getSkUser() {
-    console.log("getSkUser");
-    DeviceStorage.get('SK_USER').then((value) => {
+    DeviceStorage.get(global.storageKey.content).then((value) => {
         this.setState({
-            userName: value.userName
+            userName: value.sk
         })
     });
   }
