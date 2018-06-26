@@ -64,6 +64,14 @@ export default class EditFieldRentScreen extends Component {
   }
 
   back = (state, goBack) => { //把属性传递过来，然后进行使用
+    const { form: tempForm } = this.state;
+
+    tempForm.startDate = DateUtil.format(tempForm.startDateTmp);
+    tempForm.endDate = DateUtil.format(tempForm.endDateTmp);
+    tempForm.contractDate = DateUtil.format(tempForm.contractDateTmp);
+    this.setState({
+      form: tempForm
+    });
     state.params.callBack(JSON.stringify(this.state.form)) //回调传值
     goBack() //点击POP上一个页面得方法
   }
@@ -95,7 +103,8 @@ export default class EditFieldRentScreen extends Component {
 
   // 计算合计金额
   calcTotalAmount(unitPrice, years) {
-    if (unitPrice, years) {
+
+    if (unitPrice && years) {
       let totalAmount = parseFloat(unitPrice) * parseFloat(years);
       return totalAmount.toFixed(2);
     }

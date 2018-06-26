@@ -14,6 +14,13 @@ class DateUtil {
         return new Date(milliseconds);
       }
     }
+
+    static format(date) {
+        if (date) {
+            return this.formatDate(date.getTime(), 'yyyy-MM-dd');
+        }
+        return "";
+    }
    
     // timestamp时间戳 formater时间格式
     static formatDate(timestamp, formater) {

@@ -293,7 +293,11 @@ export default class EditFieldScreen extends Component {
     }
     return this.props.navigation.navigate("EditFieldRent", {editType: editTypeFlag, rowData: row,
       callBack:(backData) => {
-        alert(backData)
+        alert(backData);
+        rentList[i] = JSON.parse(backData);
+        this.setState({
+          fieldRentInfoList: rentList
+        });
       }
     });
   }
