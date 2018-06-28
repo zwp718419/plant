@@ -11,6 +11,9 @@
     "react": "16.3.1",
     "react-dom": "^16.4.0",
     "react-native": "0.55.4",
+    "react-native-lightbox": "^0.7.0",
+    "react-native-looped-carousel": "^0.1.13",
+    "react-native-photo-browser": "^0.4.0",
     "react-native-refreshable-listview": "^2.0.0-beta4",
     "react-native-tab-navigator": "^0.3.4",
     "react-navigation": "^2.2.5"

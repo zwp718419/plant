@@ -98,7 +98,6 @@ class FieldMasterController extends Controller {
             $result['msg'] = "该数据不存在！";
         }
 
-        Log::write("Result>>>" + json_encode($result), "INFO");
         exit(json_encode($result));
     }
 

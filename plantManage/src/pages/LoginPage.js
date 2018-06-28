@@ -1,65 +1,51 @@
 import React from 'react';
-import { View } from 'react-native';
-import { ImagePicker, WhiteSpace } from 'antd-mobile-rn';
+import { Text, View, ViewStyle } from 'react-native';
+import { Button, Progress, WhiteSpace } from 'antd-mobile-rn';
 
-export default class LoginPage extends React.Component {
+export default class BasicProgressExample extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      files: [
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2121',
-        },
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2122',
-        },
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2123',
-        },
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2124',
-        },
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2125',
-        },
-        {
-          url: 'https://zos.alipayobjects.com/rmsportal/WCxfiPKoDDHwLBM.png',
-          id: '2126',
-        },
-      ],
-      files2: [],
+      percent: 40,
     };
   }
 
-  handleFileChange = (files) => {
-    this.setState({
-      files,
-    });
-  }
-
-  handleFile2Change = (files2) => {
-    this.setState({
-      files2,
-    });
+  onAdd = () => {
+    let p = this.state.percent + 10;
+    if (this.state.percent >= 100) {
+      p = 0;
+    }
+    this.setState({ percent: p });
   }
 
   render() {
+    const style = {
+      marginTop: 80,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    };
     return (
-      <View style={{ marginTop: 20, marginLeft: 20 }}>
-        <ImagePicker
-          onChange={this.handleFileChange}
-          files={this.state.files}
-        />
+      <View>
+        <Progress percent={90} position="fixed" />
+
+        <View>
+          <View style={{ marginRight: 10, height: 4, flex: 1 }}>
+            <Progress percent={this.state.percent} />
+          </View>
+          <Text>{this.state.percent}%</Text>
+        </View>
+        <Button
+          style={{ width: 50, marginLeft: 10 }}
+          type="ghost"
+          size="small"
+          onClick={this.onAdd}
+        >
+          (+-)10
+        </Button>
+
         <WhiteSpace />
-        <ImagePicker
-          onChange={this.handleFile2Change}
-          files={this.state.files2}
-        />
+        <Progress percent={5} />
       </View>
     );
   }

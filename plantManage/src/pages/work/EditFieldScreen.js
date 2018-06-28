@@ -15,7 +15,6 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types'; 
 
-import { createStackNavigator } from 'react-navigation';
 import { WhiteSpace,WingBlank,Flex,List,Button,InputItem,Picker} from 'antd-mobile-rn';
 
 import ajax from '../../utils/fetch'

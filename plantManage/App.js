@@ -16,7 +16,7 @@ import {
 import {
   createStackNavigator,
   createBottomTabNavigator,
-  createSwitchNavigator
+  createSwitchNavigator,
 } from 'react-navigation';
 
 
@@ -29,6 +29,8 @@ import NewPlantPage from './src/pages/work/NewPlantScreen';
 
 import EditFieldPage from './src/pages/work/EditFieldScreen';
 import EditFieldRentPage from './src/pages/work/EditFieldRentScreen';
+
+import LightboxView from './src/pages/common/LightboxView';
 
 const IconHome = require('./src/res/images/home.png')
 const IconHomeSelected = require('./src/res/images/home_selected.png')
@@ -65,6 +67,17 @@ const styles = StyleSheet.create({
 });
 
 /* #################### 定义路由 #################### */
+// 共通
+// const CommonStack = createStackNavigator({
+//     LightboxView: {
+//         screen: LightboxView, 
+//         navigationOptions: {
+//             mode: 'modal',
+//             headerMode: 'none',
+//         }
+//     }
+// })
+
 // 登陆画面
 const LoginStack = createStackNavigator({
     Login: {
@@ -100,6 +113,9 @@ const WorkStack = createStackNavigator(
         // 田地管理
         EditFieldRent : {
             screen: EditFieldRentPage
+        },
+        LightboxView: {
+            screen: LightboxView
         }
     }, {
         navigationOptions: ({ navigation }) => (StackNavigationCustom(navigation))
@@ -193,6 +209,6 @@ const SwitchStack = createSwitchNavigator(
         TabStack: TabStack
     },
     {
-        initialRouteName: 'TabStack'
+        initialRouteName: 'LoginStack'
     }
 );
