@@ -1,0 +1,1120 @@
+[ 2018-06-29T09:19:20+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T09:19:21+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"31ed475edfb5a62ff8c6a147dc89725301cfc347"}}
+[ 2018-06-29T09:19:21+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.023002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.023503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T09:19:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"31ed475edfb5a62ff8c6a147dc89725301cfc347","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530235160653-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T09:19:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T09:19:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T09:19:29+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.021003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.016503s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T09:20:56+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T09:20:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"a1ecd985a293fce51c7ed1bfe058bbe716797b43"}}
+[ 2018-06-29T09:20:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2018-06-29T09:23:24+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T09:23:26+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"3c2ee526498296d2511ed82dc04252cdad29f00f"}}
+[ 2018-06-29T09:23:26+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.012501s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T09:23:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"3c2ee526498296d2511ed82dc04252cdad29f00f","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530235405671-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T09:23:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T09:23:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T09:23:29+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.019003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.019503s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T09:23:44+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T09:23:45+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"846b3950379ac2ec3a064772b610a5d0039ecb93"}}
+[ 2018-06-29T09:23:45+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.017002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2018-06-29T09:23:48+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"846b3950379ac2ec3a064772b610a5d0039ecb93","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530235425533-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T09:23:48+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T09:23:48+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T09:23:49+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.020003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.019003s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000000s ]
+
+[ 2018-06-29T09:24:03+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2018-06-29T10:08:00+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:08:01+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"1dc303984a0517fabb4da57a9d3b6d8fef92b9bb"}}
+[ 2018-06-29T10:08:01+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.020503s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:09:27+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:09:28+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"21cd1dcd8a29e902d278d4be139affa52ef8014e"}}
+[ 2018-06-29T10:09:28+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.017003s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:09:31+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"21cd1dcd8a29e902d278d4be139affa52ef8014e","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530238167564-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:09:31+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:09:31+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:09:32+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.019002s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.017503s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000000s ]
+
+[ 2018-06-29T10:09:37+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: file C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FileController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [8] Undefined index: error C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 261 行.
+NOTIC: [8] Undefined index: tmp_name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 272 行.
+
+[ 2018-06-29T10:24:32+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: file C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Undefined index: name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [8] Undefined index: error C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 261 行.
+NOTIC: [8] Undefined index: tmp_name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 272 行.
+
+[ 2018-06-29T10:25:29+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: file C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Undefined index: name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [8] Undefined index: error C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 261 行.
+NOTIC: [8] Undefined index: tmp_name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 272 行.
+
+[ 2018-06-29T10:26:01+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: file C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Undefined index: name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [8] Undefined index: error C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 261 行.
+NOTIC: [8] Undefined index: tmp_name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 272 行.
+
+[ 2018-06-29T10:28:00+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: file C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FileController.class.php 第 20 行.
+NOTIC: [8] Undefined index: name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 153 行.
+NOTIC: [8] Undefined index: error C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 261 行.
+NOTIC: [8] Undefined index: tmp_name C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 272 行.
+
+[ 2018-06-29T10:28:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:28:58+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"5620226365a76724c4e469913cfd1b9dabcfce8f"}}
+[ 2018-06-29T10:28:58+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.032004s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.014502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:29:00+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"5620226365a76724c4e469913cfd1b9dabcfce8f","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530239338256-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:29:00+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:29:00+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:29:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.027504s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.019502s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001001s ]
+
+[ 2018-06-29T10:32:27+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:32:28+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"482ef730387371b6ce9eadd0fef1a87ebba3730c"}}
+[ 2018-06-29T10:32:28+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.013502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015501s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000501s ]
+
+[ 2018-06-29T10:32:44+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:32:45+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"f2772d475ce32d42adc8cb6a1fd8d7d7d715f5f1"}}
+[ 2018-06-29T10:32:45+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.014501s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.019502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:37:19+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:37:20+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"3676c47c04d12168758e56f26ef188f5bfdd03f4"}}
+[ 2018-06-29T10:37:20+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.019503s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:37:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"3676c47c04d12168758e56f26ef188f5bfdd03f4","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530239839999-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:37:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:37:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:37:29+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.013502s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.015502s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:40:05+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:40:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"c3c8d4e44cdb5b580cb6e2c5d7689d6994811ec0"}}
+[ 2018-06-29T10:40:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.018502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001501s ]
+
+[ 2018-06-29T10:40:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"c3c8d4e44cdb5b580cb6e2c5d7689d6994811ec0","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530240006269-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:40:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:40:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:40:10+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.019003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:40:14+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2018-06-29T10:40:47+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2018-06-29T10:40:47+08:00 ] 192.168.136.171 /plant/API/api/file/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2018-06-29T10:49:11+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:49:12+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"36da6375f70947e74cf41cc7c58e19f144b0932a"}}
+[ 2018-06-29T10:49:12+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.012502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001500s ]
+
+[ 2018-06-29T10:49:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"36da6375f70947e74cf41cc7c58e19f144b0932a","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530240552957-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:49:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:49:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:49:20+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001500s ]
+
+[ 2018-06-29T10:50:31+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:50:32+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"0f848568887d67d9f0ba7ed214908466bdb9ce5f"}}
+[ 2018-06-29T10:50:32+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.022502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013501s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T10:56:22+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:56:23+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"6af9aa3f7664b20d3f2278883865ec2d4b002da1"}}
+[ 2018-06-29T10:56:23+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.012002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:57:25+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"6af9aa3f7664b20d3f2278883865ec2d4b002da1","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530240982969-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T10:57:25+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T10:57:25+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T10:57:26+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.023503s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T10:57:51+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T10:57:52+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"709e558f71d7906f26213fb3c194a3e048cfc283"}}
+[ 2018-06-29T10:57:52+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.022003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:04:49+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:04:51+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"aebbe912272c674b255ccd81a1a9db2623f1012c"}}
+[ 2018-06-29T11:04:51+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.013502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:04:53+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"aebbe912272c674b255ccd81a1a9db2623f1012c","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530241490850-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:04:53+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T11:04:53+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T11:04:54+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:15:15+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:15:16+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"b06eeded0644537dff4e03f7d117e612b4f4e529"}}
+[ 2018-06-29T11:15:16+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.012002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:15:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"sk":"b06eeded0644537dff4e03f7d117e612b4f4e529","data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530242117017-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:15:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T11:15:27+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: 99999999999999999999
+[ 2018-06-29T11:15:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.016003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.014502s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:15:32+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=[object%20Object]
+INFO: token:
+[ 2018-06-29T11:15:32+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+
+[ 2018-06-29T11:37:05+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:37:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"8d68eeb82db41db40473071a79619218347ea12a"}}
+[ 2018-06-29T11:37:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.021503s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.002500s ]
+
+[ 2018-06-29T11:37:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:37:58+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"83770df4da6b3b40cf7b90c75ff4c6ebe4f376d3"}}
+[ 2018-06-29T11:37:58+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.012502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:38:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530243478809-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:38:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sk C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 20 行.
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:38:32+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530243478809-5"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:38:32+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: sk C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 20 行.
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:39:55+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530243478809-6"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:39:55+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Use of undefined constant I - assumed 'I' C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 20 行.
+NOTIC: [2] Illegal string offset 'token' C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 20 行.
+
+[ 2018-06-29T11:40:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530243478809-7"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:40:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:44:31+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:44:32+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"583c19383a52e46fb24d4d2ef027b930bf080bf7"}}
+[ 2018-06-29T11:44:32+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:44:42+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530243872229-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:44:42+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:46:46+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:46:47+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"29782c525014ac5ebdf9c74ce0c78bf6eedde932"}}
+[ 2018-06-29T11:46:47+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.011002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2018-06-29T11:46:49+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244007828-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:46:49+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:47:29+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:47:30+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"d2206828367aeb13e4738c32dd3040db75ffb09f"}}
+[ 2018-06-29T11:47:30+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:49:05+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:49:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"7de53d6d60a325694bf3d30a7ab324bdbb726fe7"}}
+[ 2018-06-29T11:49:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:49:08+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244146331-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:49:08+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:49:32+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:49:33+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"b2f4560658adc2f2a0d1eb507467374a508011b1"}}
+[ 2018-06-29T11:49:33+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.021503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:49:35+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244173513-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:49:35+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:49:59+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:50:00+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"f862440a77d70d1b05919f4b29a3c44572fd6456"}}
+[ 2018-06-29T11:50:00+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.031004s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T11:50:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244201038-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:50:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:51:53+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:51:54+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"c5f7d88c969355e0eedca884498feee6b7d0649f"}}
+[ 2018-06-29T11:51:54+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.018503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:52:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244313602-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:52:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:58:47+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:58:48+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"29ee44c9b51c9834f82ead36eb3fb192914b54b2"}}
+[ 2018-06-29T11:58:48+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.028003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:58:50+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244728842-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:58:50+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:59:14+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:59:15+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"f4b73074aa9ffc5e14ba00037be278b3e7622eb7"}}
+[ 2018-06-29T11:59:15+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.026004s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T11:59:18+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=[object%20Object]
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244755767-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T11:59:18+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T11:59:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T11:59:59+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"376b1fa93d1d4fa9c411bf91c52a0c23aa9aacc7"}}
+[ 2018-06-29T11:59:59+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013501s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T12:00:05+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244799349-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T12:00:05+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T12:00:59+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T12:01:00+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"bea64ea65b6e42a31b47b787ba4de847fdb7fc56"}}
+[ 2018-06-29T12:01:00+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.014002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.026004s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001500s ]
+
+[ 2018-06-29T12:01:06+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244861439-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T12:01:06+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T12:02:28+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T12:02:29+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"a9a7f2bbd287583c3b568745e848dc8c347d1510"}}
+[ 2018-06-29T12:02:29+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001500s ]
+
+[ 2018-06-29T12:02:31+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=a9a7f2bbd287583c3b568745e848dc8c347d1510
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530244949489-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T12:02:31+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=a9a7f2bbd287583c3b568745e848dc8c347d1510
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T12:04:55+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T12:04:56+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"005c9429c26ddcd902a45406f4392905ab71a621"}}
+[ 2018-06-29T12:04:56+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.028003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015502s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T12:05:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=005c9429c26ddcd902a45406f4392905ab71a621
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530245097039-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T12:05:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=005c9429c26ddcd902a45406f4392905ab71a621
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:25:04+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T13:25:05+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"2e5dda5093a3c76ce63af8171ae4d309e570388c"}}
+[ 2018-06-29T13:25:05+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.016502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.016503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T13:25:33+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530249905082-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:25:33+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:25:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530249905082-5"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:25:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:27:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530249905082-6"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:27:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: 
+[ 2018-06-29T13:27:01+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:28:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530249905082-7"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:28:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: Array
+[ 2018-06-29T13:28:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: 
+[ 2018-06-29T13:28:09+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Log.class.php 第 99 行.
+NOTIC: [8] Undefined index: token C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 55 行.
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:29:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530249905082-8"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:29:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: 
+[ 2018-06-29T13:29:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: 
+[ 2018-06-29T13:29:02+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=2e5dda5093a3c76ce63af8171ae4d309e570388c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] Undefined index: token C:\phpStudy\WWW\plant\API\Apps\Api\Controller\FieldMasterController.class.php 第 55 行.
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:33:26+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:33:26+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:33:26+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:33:26+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: sssssssssss
+[ 2018-06-29T13:33:26+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-06-29T13:34:13+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:34:13+08:00 ] ::1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-29T13:35:33+08:00 ] 127.0.0.1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:35:33+08:00 ] 127.0.0.1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+NOTIC: [8] unserialize(): Error at offset 0 of 141 bytes C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+
+[ 2018-06-29T13:36:33+08:00 ] 127.0.0.1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: 
+[ 2018-06-29T13:36:33+08:00 ] 127.0.0.1 /plant/API/api/fieldMaster/getFieldInfo?token=sssssssssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-29T13:41:07+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T13:41:08+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"257be3ee0a430ff675d9978c08ad22f1dc6d83db"}}
+[ 2018-06-29T13:41:08+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.016002s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T13:41:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=257be3ee0a430ff675d9978c08ad22f1dc6d83db
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530250868649-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:41:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=257be3ee0a430ff675d9978c08ad22f1dc6d83db
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T13:41:20+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=257be3ee0a430ff675d9978c08ad22f1dc6d83db
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.016502s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001000s ]
+
+[ 2018-06-29T13:41:56+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T13:41:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"cacf2c904b67665f2cea9a2c59a27d44c1765cea"}}
+[ 2018-06-29T13:41:57+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.017502s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+
+[ 2018-06-29T13:42:10+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530250917735-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:42:10+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T13:42:11+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.017002s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.015002s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T13:42:47+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"data":{"companyCd":"ZGS","fieldId":"FD00001","fieldName":"AAAA","size":"2.00","address":"3","addressName":null,"belongToType":["RENT"],"belongToUser":"ADBDD"}}
+[ 2018-06-29T13:42:47+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T13:42:48+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/doSave?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.019002s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: UPDATE `zwp_m_field` SET `companyCd`='ZGS',`fieldName`='AAAA',`size`='2.00',`address`='3',`addressName`=null,`belongToType`='RENT',`belongToUser`='ADBDD' WHERE ( `fieldId` = 'FD00001' ) [ RunTime:0.135517s ]
+
+[ 2018-06-29T13:42:57+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530250917735-6"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:42:57+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T13:42:58+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=cacf2c904b67665f2cea9a2c59a27d44c1765cea
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.016002s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T13:58:06+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T13:58:07+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"732d52c6f7b0bc1c6668c58c21caa229bbc86938"}}
+[ 2018-06-29T13:58:07+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.024003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.012501s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T13:58:23+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=732d52c6f7b0bc1c6668c58c21caa229bbc86938
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530251887239-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T13:58:23+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=732d52c6f7b0bc1c6668c58c21caa229bbc86938
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T13:58:24+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=732d52c6f7b0bc1c6668c58c21caa229bbc86938
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.028503s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.029504s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001000s ]
+
+[ 2018-06-29T14:00:24+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T14:00:25+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"6bae7ca5922f1f8d99eda7f31ce47177d209a4d0"}}
+[ 2018-06-29T14:00:25+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000501s ]
+
+[ 2018-06-29T14:00:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=6bae7ca5922f1f8d99eda7f31ce47177d209a4d0
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530252025893-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T14:00:28+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=6bae7ca5922f1f8d99eda7f31ce47177d209a4d0
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T14:00:29+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=6bae7ca5922f1f8d99eda7f31ce47177d209a4d0
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.020002s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T14:00:49+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T14:00:50+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"1ea1535830d9c149b601b844ed1a0a0ae733e17a"}}
+[ 2018-06-29T14:00:50+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.029003s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2018-06-29T14:01:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=1ea1535830d9c149b601b844ed1a0a0ae733e17a
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530252050593-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T14:01:19+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=1ea1535830d9c149b601b844ed1a0a0ae733e17a
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T14:01:20+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=1ea1535830d9c149b601b844ed1a0a0ae733e17a
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.012502s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T14:01:37+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T14:01:38+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"7e956524bb68aae032b2025fe82716414a91fecb"}}
+[ 2018-06-29T14:01:38+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.018503s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.001001s ]
+
+[ 2018-06-29T14:01:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=7e956524bb68aae032b2025fe82716414a91fecb
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530252098526-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T14:01:56+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=7e956524bb68aae032b2025fe82716414a91fecb
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T14:01:57+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=7e956524bb68aae032b2025fe82716414a91fecb
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.024003s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.039505s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.000500s ]
+
+[ 2018-06-29T14:15:07+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-06-29T14:15:20+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-06-29T14:15:20+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=[object%20Object]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+
+[ 2018-06-29T14:17:26+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"userCd":"10007","password":"gggg"}
+[ 2018-06-29T14:17:27+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: {"code":"1000","msg":"\u767b\u5f55\u6210\u529f\uff01","data":{"user":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"loginCompanyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"},"sk":"3885160cfc4398bfe139df31f58ef648763ff7fb"}}
+[ 2018-06-29T14:17:27+08:00 ] 192.168.136.171 /plant/API/api/user/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_user` [ RunTime:0.022503s ]
+SQL: SELECT * FROM `zwp_sys_user` WHERE ( `userCd` = '10007' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zwp_sys_company_user_map` [ RunTime:0.021503s ]
+SQL: SELECT * FROM `zwp_sys_company_user_map` WHERE ( `userCd` = '10007' ) AND ( `currentFlag` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+
+[ 2018-06-29T14:22:38+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=3885160cfc4398bfe139df31f58ef648763ff7fb
+INFO: {"data":{"navigation":{"state":{"routeName":"EditField","key":"id-1530253047424-4"},"actions":{}},"editType":"0","fieldId":"FD00001"}}
+[ 2018-06-29T14:22:38+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=3885160cfc4398bfe139df31f58ef648763ff7fb
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T14:22:39+08:00 ] 192.168.136.171 /plant/API/api/fieldMaster/getFieldInfo?token=3885160cfc4398bfe139df31f58ef648763ff7fb
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field` [ RunTime:0.012502s ]
+SQL: SELECT * FROM `zwp_m_field` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `zwp_m_field_rent` [ RunTime:0.015502s ]
+SQL: SELECT * FROM `zwp_m_field_rent` WHERE ( `companyCd` = 'ZGS' ) AND ( `fieldId` = 'FD00001' )  [ RunTime:0.001500s ]
+
+[ 2018-06-29T14:22:45+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=3885160cfc4398bfe139df31f58ef648763ff7fb
+INFO: {"userInfo":{"userCd":"10007","userName":"\u674e\u56db","password":"gggg","telPhone":null,"address":null,"addressName":null},"companyInfo":{"companyCd":"ZGS","userCd":"10007","currentFlag":"1","sysAuth":"R"}}
+[ 2018-06-29T14:22:45+08:00 ] 192.168.136.171 /plant/API/api/file/upload?token=3885160cfc4398bfe139df31f58ef648763ff7fb
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\phpStudy\WWW\plant\API\include\ThinkPHP\Library\Think\Upload.class.php 第 167 行.
+

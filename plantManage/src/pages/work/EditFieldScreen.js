@@ -15,10 +15,9 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types'; 
 
-import { WhiteSpace,WingBlank,Flex,List,Button,InputItem,Picker} from 'antd-mobile-rn';
+import { WhiteSpace,WingBlank,ActivityIndicator,Flex,List,Button,InputItem,Picker} from 'antd-mobile-rn';
 
-import ajax from '../../utils/fetch'
-import DeviceStorage from '../../utils/DeviceStorage';
+import ApiUtil from '../../utils/ApiUtil';
 
 const instructions = Platform.select({
 });
@@ -43,6 +42,8 @@ export default class EditFieldScreen extends Component {
     super(props);
     this.mounted = true;
     this.state = {
+      animating: false,
+
       form: {
         fieldId: "",
         fieldName: '',
@@ -82,70 +83,36 @@ export default class EditFieldScreen extends Component {
   }
   
   // 保存
-  async doSave() {
-    let _this = this;
-    let _data = {};
-
-    // 设置sk
-    await DeviceStorage.get(global.storageKey.content).then((value) => {
-      _data.sk = value.sk;
+  doSave() {
+    this.setState({
+      animating: true
     });
     
-    // 设置form表单
-    _data.data = _this.state.form;
-
-    ajax({
-        url: global.url.fieldSave,
-        data: _data,
-        headers: {'Content-Type': 'application/json'},
-        method: 'POST',
-        success: (res)=> {
-          if (res.code === '1000') {
-            ToastAndroid.show("保存成功！", ToastAndroid.LONG);
-          } else {
-            ToastAndroid.show(res.msg, ToastAndroid.LONG);
-          }
-
-        },
-        error: (err)=> {
-            ToastAndroid.show("网络连接失败！", ToastAndroid.LONG);
-        }
+    ApiUtil.saveField({
+      data: this.state.form,
+      success: (res)=>{
+        this.setState({
+          animating: false
+        });
+        ToastAndroid.show("保存成功！", ToastAndroid.LONG);
+      }
     });
   }
   
   // 获取土地信息
-  async doGetInfo() {
-    let _this = this;
-    let _data = {};
-
-    // 设置sk
-    await DeviceStorage.get(global.storageKey.content).then((value) => {
-      _data.sk = value.sk;
+  doGetInfo() {
+    this.setState({
+      animating: true
     });
     
-    // 设置form表单
-
-    _data.data = _this.props;
-
-    ajax({
-        url: global.url.fieldRead,
-        data: _data,
-        headers: {'Content-Type': 'application/json'},
-        method: 'POST',
-        success: (res)=> {
-          //alert(JSON.stringify(res));
-          if (res.code === '1000') {
-            this.setState({
-              form: res.data
-            });
-          } else {
-            ToastAndroid.show(res.msg, ToastAndroid.LONG);
-          }
-
-        },
-        error: (err)=> {
-            ToastAndroid.show("网络连接失败！", ToastAndroid.LONG);
-        }
+    ApiUtil.getField({
+      data: this.props,
+      success: (res)=>{
+        this.setState({
+          animating: false,
+          form: res.data
+        });
+      }
     });
   }
 
@@ -161,6 +128,13 @@ export default class EditFieldScreen extends Component {
 
         <WhiteSpace/>
         <Button onClick={()=>this.doSave()}>保存</Button>
+                
+        <ActivityIndicator
+          animating={this.state.animating}
+          toast
+          size="large"
+          text="Loading..."
+        />
       </ScrollView>
     )
   }

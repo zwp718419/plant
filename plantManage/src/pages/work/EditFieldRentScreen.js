@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types'; 
 
-import { WhiteSpace,WingBlank,Flex,ActivityIndicator,Progress,List,Button,InputItem,Picker,DatePicker,DatePickerView,ImagePicker,Modal} from 'antd-mobile-rn';
+import { WhiteSpace,WingBlank,Flex,ActivityIndicator,List,Button,InputItem,Picker,DatePicker,DatePickerView,ImagePicker,Modal} from 'antd-mobile-rn';
 import Lightbox from 'react-native-lightbox';
 
 
@@ -45,7 +45,6 @@ export default class EditFieldRentScreen extends Component {
 
     this.state = {
       animating: false,
-      percent: 50,
 
       form: {
         companyCd: "",
@@ -129,37 +128,28 @@ export default class EditFieldRentScreen extends Component {
         { text: '确认', onPress: () => this.handleInputChange("files", files)},
       ]);
     } else {
-      let params = {
-        path: files[files.length - 1].url,    //本地文件地址
-        name: 'sss.jpg'
-      }
 
-      this.uploadImage(params)
-      .then(res=> {
-          //请求成功
-          //alert(JSON.stringify(res));
-          // this.setState({
-          //   animating: false
-          // })
-      }).catch(err=> {
-          //请求失败
-          //alert("ERROR: " + err);
-          
-      }).finally(()=>{
-        this.setState({
-          animating: false
-        })
+      this.setState({
+        animating: true
       })
-      this.handleInputChange("files", files);
-    }
-  }
 
-  onAdd() {
-    let p = this.state.percent + 10;
-    if (this.state.percent >= 100) {
-      p = 0;
+      for(let i = 0; i < files.length; i++) {
+        if (!files[i].id) {
+
+          ApiUtil.uploadFile({
+            data: files[i],
+            success: (res)=>{
+              this.handleInputChange("files", files);
+            },
+            complete: ()=>{
+              this.setState({
+                animating: false
+              })
+            }
+          });
+        }
+      }
     }
-    this.setState({ percent: p });
   }
 
   // 打开图片
@@ -169,33 +159,6 @@ export default class EditFieldRentScreen extends Component {
       mediaList.push({photo: files[i].url});
     }
     this.props.navigation.navigate("LightboxView", {media: mediaList, index: index});
-  }
-
-  uploadImage(params) {
-    return new Promise(function (resolve, reject) {
-        let formData = new FormData();
-        for (var key in params){
-            formData.append(key, params[key]);
-        }
-        let file = {uri: params.path, type: 'multipart/form-data', name: 'image.jpg'};
-        formData.append("file", file);
-
-        fetch("http://192.168.136.171:9096/plant/API/api/file/upload", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'multipart/form-data;charset=utf-8',
-            },
-            body: formData,
-        }).then((response) => response.json())
-            .then((responseData)=> {
-                console.log('uploadImage', responseData);
-                resolve(responseData);
-            })
-            .catch((err)=> {
-                console.log('err', err);
-                reject(err);
-            });
-    });
   }
 
   componentWillUnmount() {
@@ -312,9 +275,6 @@ export default class EditFieldRentScreen extends Component {
           size="large"
           text="Loading..."
         />
-        <View style={{ marginRight: 10, height: 4, flex: 1 }}>
-          <Progress percent={this.state.percent} />
-        </View>
       </View>
     );
   }

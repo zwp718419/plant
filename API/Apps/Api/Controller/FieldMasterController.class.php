@@ -17,8 +17,8 @@ class FieldMasterController extends Controller {
         Log::write($bodyStr, "INFO");
         $data = json_decode($bodyStr, true);
 
-        $sd = vaild_sk($data['sk']);
-        Log::write(json_encode($sd), "INFO");
+        $token = vaild_sk($_REQUEST["token"]);
+        Log::write(json_encode($token), "INFO");
 
         // 表单信息
         $fieldForm = $data['data'];
@@ -26,7 +26,7 @@ class FieldMasterController extends Controller {
         $fieldForm['belongToType'] = $fieldForm['belongToType'][0];
 
         // 公司信息
-        $companyInfo = $sd['companyInfo'];
+        $companyInfo = $token['companyInfo'];
         $fieldForm['companyCd'] = $companyInfo['companyCd'];
 
         $f = D('MField');
@@ -51,15 +51,14 @@ class FieldMasterController extends Controller {
         Log::write($bodyStr, "INFO");
         $data = json_decode($bodyStr, true);
 
-        $sd = vaild_sk($data['sk']);
-        Log::write(json_encode($sd), "INFO");
-        Log::write("99999999999999999999", "INFO");
+        $token = vaild_sk($_REQUEST["token"]);
+        Log::write(json_encode($token), "INFO");
 
         // 表单信息
         $fieldForm = $data['data'];
 
         // 公司信息
-        $companyInfo = $sd['companyInfo'];
+        $companyInfo = $token['companyInfo'];
 
         // 获取土地信息
         $f = D('MField');

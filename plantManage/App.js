@@ -68,15 +68,18 @@ const styles = StyleSheet.create({
 
 /* #################### 定义路由 #################### */
 // 共通
-// const CommonStack = createStackNavigator({
-//     LightboxView: {
-//         screen: LightboxView, 
-//         navigationOptions: {
-//             mode: 'modal',
-//             headerMode: 'none',
-//         }
-//     }
-// })
+const CommonStack = createStackNavigator(
+    {
+        LightboxView: {
+            screen: LightboxView,
+        }
+    }, {
+        navigationOptions: {
+            mode: 'modal',
+            headerMode: 'none',
+        }
+    }
+)
 
 // 登陆画面
 const LoginStack = createStackNavigator({
@@ -113,9 +116,6 @@ const WorkStack = createStackNavigator(
         // 田地管理
         EditFieldRent : {
             screen: EditFieldRentPage
-        },
-        LightboxView: {
-            screen: LightboxView
         }
     }, {
         navigationOptions: ({ navigation }) => (StackNavigationCustom(navigation))
@@ -203,12 +203,15 @@ const tabBarOptionsCustom = {
 }
 
 //
-const SwitchStack = createSwitchNavigator(
+// const SwitchStack = createSwitchNavigator(
+const SwitchStack = createStackNavigator (
     {
         LoginStack: LoginStack,
-        TabStack: TabStack
+        TabStack: TabStack,
+        CommonStack: CommonStack,
     },
     {
-        initialRouteName: 'LoginStack'
+        initialRouteName: 'TabStack',
+        headerMode: 'none',
     }
 );
